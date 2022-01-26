@@ -72,8 +72,9 @@ export default class App extends Component {
   };
 
   formSubmitHandler = (data) => {
-    const { name } = data;
-    const normalizedNameContact = name.toLowerCase();
+    //const { name } = data;
+    console.log(data);
+    const normalizedNameContact = data.toLowerCase();
     this.setState({ pictureName: normalizedNameContact });
   };
 

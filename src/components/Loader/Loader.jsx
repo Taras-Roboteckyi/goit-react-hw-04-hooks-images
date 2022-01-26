@@ -1,7 +1,8 @@
-import { TailSpin } from 'react-loader-spinner';
+import { TailSpin } from "react-loader-spinner";
 
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-import styles from '../Loader/Loader.module.css';
+//import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
+import styles from "../Loader/Loader.module.css";
 
 const Loader = () => {
   const { spinner } = styles;
