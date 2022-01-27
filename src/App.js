@@ -24,7 +24,6 @@ export default function App() {
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
-    console.log("Start-Початок");
     if (pictureName) {
       newsApi.resetPage();
       setPicture([]);
@@ -44,7 +43,7 @@ export default function App() {
     newsApi
       .fetchImages()
       .then(({ hits }) => {
-        console.log(hits.length);
+        //console.log(hits.length);
         setPicture((prevState) => [...prevState, ...hits]);
         setImage(true);
 
